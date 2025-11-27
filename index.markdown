@@ -4,3 +4,7 @@
 
 layout: home
 ---
+
+NotARougheLike by NotAGroup is dungeon crawler.
+
+This the development blog to a Studentproject. We grant no gurantees or waranty for either blog nore code. 
