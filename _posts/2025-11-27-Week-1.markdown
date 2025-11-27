@@ -49,6 +49,9 @@ rooms are used as the scale for the Wall Asset and therefore one Wall Asset is u
 but preformancewise its way cheaper but that all has to be worked over again with the new Wall Assets from Rene.
 <img width="300" alt="shop with three items" src="{{ '/images/wall_gen_old.png' | relative_url }}"> <img width="300" alt="shop with three items" src="{{ '/images/wall_gen_new.png' | relative_url }}">
 Old Wall Generation vs New Wall Generation
+
+By Sven Gerber
+
 ## Tooling:
 
 This blog has been set up and configured.
