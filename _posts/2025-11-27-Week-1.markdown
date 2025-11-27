@@ -26,15 +26,19 @@ By Rene Tischler
 
 ## Shop:
 
-Added scripts and prefabs for a shop.
+Added scripts and prefabs for a shop (currently without proper assets).
+
+<img width="300" height="400" alt="shop with three items" src="{{ '/images/Shop_Initial.png' | relative_url }}">
+
 The shop can be placed into rooms by the level generator
 (currently with constant probability for any room, with 3 random items).
 
 The shop displays the available items which can be purchased by looking
 at the item and pressing the interaction button.
-Currently, as no currency is implemented, the items are free.
+Positions of the displayed items can be adjusted to fit the shops model
+which has to be added in the future.
 
-Next: proper assets for the shop, currency system, display hint for interaction
+Currently, as no currency is implemented, the items are free.
 
 By Axel Schneewind
 
