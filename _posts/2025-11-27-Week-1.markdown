@@ -28,7 +28,7 @@ By Rene Tischler
 
 Added scripts and prefabs for a shop (currently without proper assets).
 
-<img width="300" height="400" alt="shop with three items" src="{{ '/images/Shop_Initial.png' | relative_url }}">
+<img width="300" alt="shop with three items" src="{{ '/images/Shop_Initial.png' | relative_url }}">
 
 The shop can be placed into rooms by the level generator
 (currently with constant probability for any room, with 3 random items).
