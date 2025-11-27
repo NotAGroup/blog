@@ -4,6 +4,8 @@ title:  "Week 1"
 categories: jekyll update
 ---
 After we decided what your game should be, we started working on it.
+
 Asset:
+---
 Finish basic creation of Skeletton soldier.
 <img width="300" height="400" alt="image" src="https://github.com/user-attachments/assets/34a584f9-5c5e-4cfb-ac15-66e4e91e2894" />
