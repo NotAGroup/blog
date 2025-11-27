@@ -5,8 +5,8 @@ categories: jekyll update
 ---
 After we decided what our game should be, we started working on it.
 
-Assets:
----
+## Assets:
+
 Finish basic creation of Skeletton soldier.
 
 <img width="300" height="400" alt="Skeleton Soldier" src="{{ '/images/skeleton-soldier.png' | relative_url }}">
@@ -24,8 +24,22 @@ Furthermore, a custom low poly wall model with a baked normal map was created fo
 
 By Rene Tischler
 
-Tooling:
----
+## Shop:
+
+Added scripts and prefabs for a shop.
+The shop can be placed into rooms by the level generator
+(currently with constant probability for any room, with 3 random items).
+
+The shop displays the available items which can be purchased by looking
+at the item and pressing the interaction button.
+Currently, as no currency is implemented, the items are free.
+
+Next: proper assets for the shop, currency system, display hint for interaction
+
+By Axel Schneewind
+
+## Tooling:
+
 This blog has been set up and configured.
 
 By David Ruff
