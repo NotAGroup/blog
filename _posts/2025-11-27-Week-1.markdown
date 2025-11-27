@@ -5,8 +5,20 @@ categories: jekyll update
 ---
 After we decided what your game should be, we started working on it.
 
-Asset:
+Assets:
 ---
 Finish basic creation of Skeletton soldier.
 
-<img width="300" height="400" alt="Skeleton Soldier" src="{{ '/Images/Fig1.png' | relative_url }}">
+<img width="300" height="400" alt="Skeleton Soldier" src="{{ '/images/skeleton-soldier.png' | relative_url }}">
+
+By Guanpu Tian
+
+A material for a brick wall with a diffuse, displacement, and normal texture was created. Which will not be used for now because Unity does not support displacement maps.
+
+<img width="300" height="400" alt="Brick Wall Texture" src="{{ '/images/brick-wall-texture.png' | relative_url }}">
+
+Furthermore, a custom low poly wall model with a baked normal map was created for dungeon generation.
+
+<img width="300" height="400" alt="Dungeon Wall" src="{{ '/images/wall.png' | relative_url }}">
+
+By Rene Tischler
