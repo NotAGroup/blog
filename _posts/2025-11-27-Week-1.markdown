@@ -3,4 +3,4 @@ layout: post
 title:  "Week 1"
 categories: jekyll update
 ---
-After we decided what your geame should be we started working on it.
+After we decided what your game should be, we started working on it.

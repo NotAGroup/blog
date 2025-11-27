@@ -5,6 +5,18 @@
 layout: home
 ---
 
-NotARougheLike by NotAGroup is dungeon crawler.
+NotARougheLike by NotAGroup is a first-person roguelike dungeon crawler.
 
-This the development blog to a Studentproject. We grant no gurantees or waranty for either blog nore code. 
+This is the development blog for the student project.
+We grant no guarantees or warranties for either the blog or the code.
+
+Our team consists of the following people:
+
+Member | Roles
+-|-
+Sven Gerber | Game Logic, Level Design
+Moritz Mahling | Game Logic, Controls & Gameplay
+David Ruff | Game Logic, Tooling
+Axel Schneewind | Game Logic, VFX
+Guanpu Tian | Game Logic, Asset Creation, Animation, Sound Design
+Rene Tischler | Game Logic, Asset Creation, UI
