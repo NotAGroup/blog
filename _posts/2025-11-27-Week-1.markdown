@@ -9,4 +9,4 @@ Asset:
 ---
 Finish basic creation of Skeletton soldier.
 
-<img width="300" height="400" alt="image"  src="{{ site.baseurl }}/_Images/Fig1.png" />
+<img width="300" height="400" alt="image"  src="{{ site.baseurl }}/_posts/_Images/Fig1.png" />
