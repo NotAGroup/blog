@@ -15,7 +15,7 @@ Our team consists of the following people:
 Member | Roles
 -|-
 [Sven Gerber](https://github.com/extremefalcon) | Game Logic, Level Design
-[Moritz Mahling](https://github.com/MoritzMahling) | Game Logic, Controls & Gameplay
+[Moritz Mahling](https://github.com/MoritzMahling) | Game Logic, Combat System & Enemy Behavior
 [David Ruff](https://github.com/ruffdd) | Game Logic, Tooling
 [Axel Schneewind](https://github.com/AxelSchneewind) | Game Logic, UI, VFX
 [Guanpu Tian](https://github.com/lVentus) | Game Logic, Asset Creation, Animation, Sound Design

@@ -42,7 +42,8 @@ Currently, as no currency is implemented, the items are free.
 
 By Axel Schneewind
 
-## Dungeon Creation
+## Dungeon Creation:
+
 In the previous version a Wall Asset with width and length of 1 was used for creating the walls of the dungeon. This resulted
 in a lot of generated Wall Assets in one Dungeon which leads to performance issues. To fix this, the lengths and widths of the
 rooms are used as the scale for the Wall Asset and therefore one Wall Asset is used for one Wall. The scaling is not perfect,
@@ -52,6 +53,12 @@ but preformancewise its way cheaper but that all has to be worked over again wit
 Old Wall Generation vs New Wall Generation
 
 By Sven Gerber
+
+## Combat System & Enemy Behavior:
+
+Implemented the initial ability for opponents to deal damage to the player. This first implementation is based on the melee attack of the player, but will be changed later so that the damage dealing logic is separate from the visual animations.
+
+By Moritz Mahling
 
 ## Tooling:
 
