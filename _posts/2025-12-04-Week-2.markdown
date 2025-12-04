@@ -15,7 +15,7 @@ For an item, attributes such as display-name, models for rendering, probabilitie
 Further, the Inventory-component is added, which stores the players items in a
 configurable number of slots.
 
-[Item hotbar and shop interaction](/images/items.gif)
+<img width="300" alt="Item hotbar and shop interaction" src="{{ '/images/items.gif' | relative_url }}">
 
 For visualization using a hotbar, ui components are added. Available items
 are shown at the bottom of the screen. Usage using number keys has already been implemented.
