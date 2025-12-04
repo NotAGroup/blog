@@ -6,21 +6,21 @@ categories: jekyll update
 
 ## Items:
 
-Added Scripts for item definitions and player inventory. 
+Added Scripts for item definitions and player inventory.
 Implemented the ItemDefiner component which is intended to be used as a singleton
 in the scene, attached to a prefab where the definitions can be edited.
-For an item, attributes such as display-name, models for rendering, probabilities 
+For an item, attributes such as display-name, models for rendering, probabilities
 (for being available in shops or in chests) can be defined.
 
-Further, the Inventory-component is added, which stores the players items in a 
+Further, the Inventory-component is added, which stores the players items in a
 configurable number of slots.
 
 <img width="300" height="400" alt="Item hotbar and shop interaction" src="{{ '/images/items.gif' | relative_url }}">
 
-For visualization using a hotbar, ui components are added. Available items 
+For visualization using a hotbar, ui components are added. Available items
 are shown at the bottom of the screen. Usage using number keys has already been implemented.
 
-For now, no item models are shown in the hotbar, as currently, we don't have any 2d assets for 
+For now, no item models are shown in the hotbar, as currently, we don't have any 2d assets for
 the items. Solutions have to be discussed with the asset creators.
 We could: manually create 2D-assets, create these automatically (custom editors maybe)
 or (my least favorite) render the 3D models using an overlay camera.
@@ -30,6 +30,15 @@ preparing for the future addition of character classes and player levelling.
 
 By Axel Schneewind
 
+## Assets:
 
+For the dungeon generation, a low-poly pillar model with a baked normal map was created in Blender to match the walls.
 
+<img width="300" height="400" alt="Dungeon Pillar" src="{{ '/images/pillar.png' | relative_url }}">
 
+Furthermore, a torch model with a normal, metallic, and diffuse texture was created, and a prefab was made to light up the dungeon.
+
+<img width="340" height="340" alt="Torch" src="{{ '/images/torch.png' | relative_url }}">
+<img width="600" height="340" alt="Torch Prefab" src="{{ '/images/torch-prefab.png' | relative_url }}">
+
+By Rene Tischler
