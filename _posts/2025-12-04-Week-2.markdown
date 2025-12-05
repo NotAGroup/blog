@@ -42,6 +42,15 @@ Furthermore, a torch model with a normal, metallic, and diffuse texture was crea
 
 By Rene Tischler
 
+## Wall Creation
+
+With the new Wall Asset from Rene, I implemented the wall creation of the dungeon. It looked to steched out using only one Asset for each Wall
+so I had to change the code. The normal Asset with a scaling of (1, 1, 1) has a width of approximatly 4 units in Unity. Therefore the new
+function divides the length of the wall by 4 (length of the Wall Asset). With that i get the amount of wall assets i need for one wall.
+Additionally a slight offset on the orthogonal axis (not the y-Axis) of the vertical or horizontal Walls is added for some prettier Walls.
+
+By Sven Gerber
+
 ## Combat System & Enemy Behavior:
 
 Additional work has been done so that the logic of damage dealing is separate from the visual animations. Damage is now dealt if the player is in an invisible HitZone during the attack of the opponent, rather than checking for collisions with the mesh of the weapon model. In order for the damage to be dealt at an appropriate time during the animation, the HitZone only becomes active during the "Strike" HitState of the attack.
