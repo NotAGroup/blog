@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Week 3"
+categories: jekyll update
+---
+
+## Inventory UI:
+
+Added Scripts and prefabs for displaying and managing the players inventory.
+
+<img width="300" alt="Inventory UI, moving items between slots" src="{{ '/images/inventory.gif' | relative_url }}">
+
+Currently, the inventory can be opened by pressing 'E'. 
+Item slots can be selected using WASD-keys. An item can be grabbed by pressing space and then moved using WASD.
+
+Also, analogously to the hotbar for items, a hotbar for currencies is added.
+
+## Player stats and upgrades
+
+Added Scripts and prefabs to implement upgrades of player stats. 
+Here, I distinguish between base stats (health, dexterity, ...) that can be upgraded (the level simply being an integer each) and gameplay-stats that depend on base stats and influence gameplay (movement speed, max-health,...).
+
+The StatScalingDefinitions-Component provides definitions on how to compute gameplay-stats from base-stats. It is added to the "Definitions"-Prefab to allow configuring of these values. 
+Further, it is possible to create different definitions-prefabs to define different levels of difficulty.
+
+By Axel Schneewind
+
+
