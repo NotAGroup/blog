@@ -10,19 +10,42 @@ Added Scripts and prefabs for displaying and managing the players inventory.
 
 <img width="300" alt="Inventory UI, moving items between slots" src="{{ '/images/inventory.gif' | relative_url }}">
 
-Currently, the inventory can be opened by pressing 'E'. 
-Item slots can be selected using WASD-keys. An item can be grabbed by pressing space and then moved using WASD.
+Currently, the inventory can be opened by pressing 'E'.
+Item slots can be selected using WASD-keys.
+An item can be grabbed by pressing space and then moved using WASD.
 
 Also, analogously to the hotbar for items, a hotbar for currencies is added.
 
 ## Player stats and upgrades
 
-Added Scripts and prefabs to implement upgrades of player stats. 
+Added Scripts and prefabs to implement upgrades of player stats.
 Here, I distinguish between base stats (health, dexterity, ...) that can be upgraded (the level simply being an integer each) and gameplay-stats that depend on base stats and influence gameplay (movement speed, max-health,...).
 
-The StatScalingDefinitions-Component provides definitions on how to compute gameplay-stats from base-stats. It is added to the "Definitions"-Prefab to allow configuring of these values. 
+The StatScalingDefinitions-Component provides definitions on how to compute gameplay-stats from base-stats. It is added to the "Definitions"-Prefab to allow configuring of these values.
 Further, it is possible to create different definitions-prefabs to define different levels of difficulty.
 
 By Axel Schneewind
 
+## Assets:
 
+Textures were created for the wall, pillar and wall torch models to give them a stone-like appearance.
+
+<img width="300" alt="Inventory UI, moving items between slots" src="{{ '/images/stone-wall.png' | relative_url }}">
+
+Appropriate textures and materials were also created for the ceiling and floor to match the dungeon.
+
+<img width="300" alt="Inventory UI, moving items between slots" src="{{ '/images/ceiling-floor.png' | relative_url }}">
+
+Enemies and destructible objects should be able to drop coins.
+These can be used by players to purchase items in the shop.
+A model of a pile of coins with appropriate textures and materials was created in Blender for this purpose.
+
+<img width="300" alt="Inventory UI, moving items between slots" src="{{ '/images/coin-pile.png' | relative_url }}">
+
+Currently, the player only shoots gray balls as projectiles.
+To enable the player to shoot arrows as an archer in the future, a suitable model with textures was also created.
+
+
+<img width="300" alt="Inventory UI, moving items between slots" src="{{ '/images/arrow.png' | relative_url }}">
+
+By Rene Tischler
