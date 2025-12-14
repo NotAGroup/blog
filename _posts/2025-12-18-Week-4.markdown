@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Week 4"
+categories: jekyll update
+---
+
+## Assets:
+
+Since the user is supposed to advance in the game by exploring the dungeon, once they have fully explored a floor and defeated all enemies, there should be a way to proceed to the next level.
+To do this, a new floor must be generated.
+In order to make this possible, we decided that the player must interact with an element in the game.
+In our case, a trapdoor.
+This trapdoor was created together with the appropriate base, metallic, and normal textures in Blender.
+
+<img width="300"  alt="Trapdoor" src="{{ '/images/trapdoor.png' | relative_url }}">
+
+By Rene Tischler
