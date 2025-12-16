@@ -19,6 +19,10 @@ Wood and fabric materials and the corresponding textures were created for this t
 
 <img width="300"  alt="Table" src="{{ '/images/table.png' | relative_url }}">
 
+To make the existing skeleton soldier more visually appealing, suitable color and metallic textures were created.
+
+<img width="300"  alt="Textured Skeleton" src="{{ '/images/textured-skeleton.png' | relative_url }}">
+
 By Rene Tischler
 
 
