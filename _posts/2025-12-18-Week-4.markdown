@@ -14,4 +14,9 @@ This trapdoor was created together with the appropriate base, metallic, and norm
 
 <img width="300"  alt="Trapdoor" src="{{ '/images/trapdoor.png' | relative_url }}">
 
+To enhance our shop, which can be found in the dungeon, a model of an old table was created.
+Wood and fabric materials and the corresponding textures were created for this table.
+
+<img width="300"  alt="Table" src="{{ '/images/table.png' | relative_url }}">
+
 By Rene Tischler
