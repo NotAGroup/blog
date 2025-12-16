@@ -25,13 +25,13 @@ By Rene Tischler
 ## Level progression
 
 Dungeon creation now places a trapdoor in the room furthest away from the player.
-Interacting with the trapdoor after clearing the level takes the player to the next level (simply incrementing the level and reloading the scene).
-A level counts as completed after all enemies have been eliminated.
+Interacting with the trapdoor after clearing the level takes the player to the next level (simply incrementing a level variable and reloading the scene).
+A level counts as completed after all enemies have been eliminated. We could also add other conditions, e.g. finding a specific object (key).
 
 To keep data across levels, a class is added which stores references to the required data
 and persists across scene reloads.
 
-The persistent data is registered to the game saving system.
+The persistent data is registered to the game saving system developed by David.
 
 ## Player Upgrades
 
@@ -39,8 +39,7 @@ The player can now upgrade their stats using XP. For this, logic for defining up
 
 <img width="300"  alt="Upgrade UI" src="{{ '/images/upgrade-ui.png' | relative_url }}">
 
-Other small contributions: Improved gamepad input for UIs and camera movement. Added the assets for table and trapdoor to the respective prefabs.
+Other small contributions: Improved gamepad mappings for UIs and stick-based camera movement. Added the assets for table and trapdoor to the respective prefabs.
 
 By Axel Schneewind
-
 
