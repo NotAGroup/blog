@@ -20,3 +20,27 @@ Wood and fabric materials and the corresponding textures were created for this t
 <img width="300"  alt="Table" src="{{ '/images/table.png' | relative_url }}">
 
 By Rene Tischler
+
+
+## Level progression
+
+Dungeon creation now places a trapdoor in the room furthest away from the player.
+Interacting with the trapdoor after clearing the level takes the player to the next level (simply incrementing the level and reloading the scene).
+A level counts as completed after all enemies have been eliminated.
+
+To keep data across levels, a class is added which stores references to the required data
+and persists across scene reloads.
+
+The persistent data is registered to the game saving system.
+
+## Player Upgrades
+
+The player can now upgrade their stats using XP. For this, logic for defining upgrade cost is added. Further, a UI is added that shows current stat levels and allows the player to upgrade them.
+
+<img width="300"  alt="Upgrade UI" src="{{ '/images/upgrade-ui.png' | relative_url }}">
+
+Other small contributions: Improved gamepad input for UIs and camera movement. Added the assets for table and trapdoor to the respective prefabs.
+
+By Axel Schneewind
+
+
