@@ -47,3 +47,7 @@ Other small contributions: Improved gamepad mappings for UIs and stick-based cam
 
 By Axel Schneewind
 
+## Game Saving
+The game can now save to Disk. This allows for things like collected coins and player levels, to not only be kept between runs, but also between game executions.
+
+By David Ruff
