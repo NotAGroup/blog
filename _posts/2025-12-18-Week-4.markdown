@@ -59,4 +59,6 @@ So this week I fixed these problems. The scaling probleme was fixed quite easy, 
 For the second probleme I corrected the scaling and positioning of the Wall Objects. I placed the Pillar Asset Rene
 created in the corners and with that it looked way better, although I noticed that for a corridor one wall wasn't generated, so some bugs remain which have to be fixed soon.
 
+<img width="300"  alt="Black Sun" src="{{ '/images/black_sun.jpg' | relative_url }}">
+
 By Sven Gerber
