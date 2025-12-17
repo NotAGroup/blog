@@ -51,3 +51,12 @@ By Axel Schneewind
 The game can now save to Disk. This allows for things like collected coins and player levels, to not only be kept between runs, but also between game executions.
 
 By David Ruff
+
+## Correcting the Wall Creation
+
+The Dungeon generation wasn't working perfectly. The Walls weren't reaching the corner of the rooms, Walls with Scale 0 were created which looked like a black sun (see ref).
+So this week I fixed these problems. The scaling probleme was fixed quite easy, since I rotate the Wall prefab at the instantiation, I don't have to scale it along the z-Axis but the x-Axis.
+For the second probleme I corrected the scaling and positioning of the Wall Objects. I placed the Pillar Asset Rene
+created in the corners and with that it looked way better, although I noticed that for a corridor one wall wasn't generated, so some bugs remain which have to be fixed soon.
+
+By Sven Gerber
