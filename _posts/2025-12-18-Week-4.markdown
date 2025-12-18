@@ -62,3 +62,11 @@ created in the corners and with that it looked way better, although I noticed th
 <img width="300"  alt="Black Sun" src="{{ '/images/black_sun.jpg' | relative_url }}">
 
 By Sven Gerber
+
+## Combat System & Enemy Behavior
+
+Further work has been done to improve the animation controller and the way how the enemies perceive the player, as well as some tuning on their combat behavior. A few small issues were fixed with wrong state changes in the state machine of the animation controller, and a blend tree has been added that is now used to seamlessly interpolate between a forward, backward, left and right walking animation depending on the direction of the opponent's velocity.
+In combat, enemies now target a position that is a little in front of the player, but still close enough so that their attack range is enough for a hit. When an enemy drops below 50% health, they will become more cautious and try to avoid getting hit any further.
+Previously, enemies would automatically become aware of the player when he was within a certain range. Now, multiple factors are taken into account: The enemies still have a limited perception range, but they can only perceive the player if he is within a 120 degree cone that is in front of the enemy. They also cannot see the player if a wall is blocking their line of sight. When an enemy loses sight of the player, they will still go to the location that they have last seen the player at, wait there for a short while, and then return to the nav points in their spawn room.
+
+By Moritz Mahling
