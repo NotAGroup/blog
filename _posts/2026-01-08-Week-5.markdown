@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Week 5"
+categories: jekyll update
+---
+
+# UI
+
+Added a crosshair and a text element to the UI to show that the player can interact with an object.
+
+# Gameplay 
+
+Improved the behaviour of projectiles. Switched hit detection from collisions to raycasting which allows arbitrary projectile speeds. 
+Further, arrows can now stick to objects (disabling physics, i.e. setting rigidbody to be kinematic) and fall down when that object gets destroyed (i.e. enabling physics).
+In particular, arrows now get attached to the animation bones of the opponent, thereby also matching its movements.
+
+With these changes, arrows now stay in the scene and can be picked up after being shot.
+
+# Balancing
+
+Added a component to define dungeon properties depending on the level.
+These definitions should be used by the dungeon generation algorithm.
+
+By Axel Schneewind
+
+
+
