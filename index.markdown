@@ -5,7 +5,7 @@
 layout: home
 ---
 
-NotARogueLike by NotAGroup is a first-person roguelike dungeon crawler.
+[NotARogueLike](https://github.com/NotAGroup/NotARogueLike) by NotAGroup is a first-person roguelike dungeon crawler.
 
 This is the development blog for the student project.
 We grant no guarantees or warranties for either the blog or the code.
