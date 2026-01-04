@@ -4,24 +4,48 @@ title:  "Week 5"
 categories: jekyll update
 ---
 
-# UI
+## UI
 
 Added a crosshair and a text element to the UI to show that the player can interact with an object.
 
-# Gameplay 
+## Gameplay
 
-Improved the behaviour of projectiles. Switched hit detection from collisions to raycasting which allows arbitrary projectile speeds. 
+Improved the behaviour of projectiles. Switched hit detection from collisions to raycasting which allows arbitrary projectile speeds.
 Further, arrows can now stick to objects (disabling physics, i.e. setting rigidbody to be kinematic) and fall down when that object gets destroyed (i.e. enabling physics).
 In particular, arrows now get attached to the animation bones of the opponent, thereby also matching its movements.
 
 With these changes, arrows now stay in the scene and can be picked up after being shot.
 
-# Balancing
+## Balancing
 
 Added a component to define dungeon properties depending on the level.
 These definitions should be used by the dungeon generation algorithm.
 
 By Axel Schneewind
 
+## Assets:
 
+Minor flaws in the mesh of the existing bow and quiver models were fixed.
+Textures and materials were then created for these models.
 
+<img width="300" alt="Textured Bow" src="{{ '/images/textured-bow.png' | relative_url }}">
+
+<img height="400" alt="Textured Quiver" src="{{ '/images/textured-quiver.png' | relative_url }}">
+
+Textures and materials were also created for the new warrior model designed by Guanpu Tian.
+
+<img width="300" alt="Textured Warrior" src="{{ '/images/textured-warrior.png' | relative_url }}">
+
+By Rene Tischler
+
+## Dungeon Creation:
+
+During dungeon generation, instantiated assets are no longer placed arbitrary in the scene hierarchy.
+The generated level is divided into segments, and the assets are instantiated as children of these segments.
+This makes the scene hierarchy much less cluttered.
+
+Furthermore, ceiling meshes are now also generated. Both the floor and the ceiling now use their intended materials.
+
+<img width="300" alt="Current Game View" src="{{ '/images/floor-ceiling.png' | relative_url }}">
+
+By Rene Tischler
