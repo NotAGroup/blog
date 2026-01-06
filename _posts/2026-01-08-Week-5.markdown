@@ -48,4 +48,14 @@ Furthermore, ceiling meshes are now also generated. Both the floor and the ceili
 
 <img width="300" alt="Current Game View" src="{{ '/images/floor-ceiling.png' | relative_url }}">
 
+Torches are also placed as evenly as possible on the walls so that they can illuminate the dungeon in the future.
+
+<img width="300" alt="Placed Torches" src="{{ '/images/placed-torches.png' | relative_url }}">
+
+By Rene Tischler
+
+## Game Saving
+
+A minor bug that prevented the game save file from loading correctly has been fixed in the game save system developed by David.
+
 By Rene Tischler
