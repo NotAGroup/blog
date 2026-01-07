@@ -54,6 +54,20 @@ Torches are also placed as evenly as possible on the walls so that they can illu
 
 By Rene Tischler
 
+## Akward Corridor Fix
+
+<img width="300" alt="Akward Corridor Example" src="{{ '/images/akward_corridor.png' | relative_url }}">
+
+During the dungeon creation the calculations of the corridors could end in "awkward" corridors, how we call them.
+The Probleme can be seen in the reference picture. The Algorithm could choose the left room to connect to the bottom room.
+But since the connecting space between the rooms is insufficent a barley or not even passable corridor is placed.
+To fix this error, the corner of all possible rooms for connecting two partions are checked. For example in the reference picture the 
+length of the left bottom corner of the top room to the right top corner of the bottom room and vice versa. Dividing now the smaller length by
+the lager length gives a proportion from 0 to 1, on how much the rooms overlap with eachother. With 1 meaning they overlap 100% and
+0 meaning they dont overlap at all. Now the Algorthim searches for the largest proportion and with that the probleme of akward corridors is fixed.
+
+By Sven Gerber
+
 ## Game Saving
 
 A minor bug that prevented the game save file from loading correctly has been fixed in the game save system developed by David.
