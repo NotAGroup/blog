@@ -68,12 +68,12 @@ Torches are also placed as evenly as possible on the walls so that they can illu
 
 By Rene Tischler
 
-## Akward Corridor Fix
+## Awkward Corridor Fix
 
-<img width="300" alt="Akward Corridor Example" src="{{ '/images/akward_corridor.png' | relative_url }}">
+<img width="300" alt="Awkward Corridor Example" src="{{ '/images/akward_corridor.png' | relative_url }}">
 
 During the dungeon creation the calculations of the corridors could end in "awkward" corridors, how we call them.
-The Probleme can be seen in the reference picture. The Algorithm could choose the left room to connect to the bottom room.
+The Problem can be seen in the reference picture. The Algorithm could choose the left room to connect to the bottom room.
 But since the connecting space between the rooms is insufficent a barley or not even passable corridor is placed.
 To fix this error, the corner of all possible rooms for connecting two partions are checked. For example in the reference picture the 
 length of the left bottom corner of the top room to the right top corner of the bottom room and vice versa. Dividing now the smaller length by
@@ -103,3 +103,9 @@ I am currently working on the animation for the door. Next steps are materials f
 Also some blog documentation and bug minor bug fixes. etc. 
 
 By David Ruff
+
+## Combat System & Enemy Behavior
+
+The player now uses the new first person warrior model. The model is animated using its own animation controller that supports movement in all four directions, an idle animation, a jump animation and an attack animation. The movement animations are sped up when the player is sprinting. The attack animation is on another layer so that it can play in parallel with the movement animations.
+
+By Moritz Mahling
