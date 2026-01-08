@@ -10,7 +10,7 @@ Until now, the lighting data for our scene is the default one (in particular, us
 I switched the lighting entirely to the torches placed in the dungeon and regenerated lighting data.
 Further, I implemented flickering behaviour for the torches, based on a poisson distribution.
 
-<video width="300" alt="lighting based on torches with flickering effect" src="{{ '/images/torches.mp4' | relative_url }}">
+<video width="600" alt="lighting based on torches with flickering effect" src="{{ '/images/torches.mp4' | relative_url }}">
 
 ## UI
 
@@ -23,6 +23,8 @@ Further, arrows can now stick to objects (disabling physics, i.e. setting rigidb
 In particular, arrows now get attached to the animation bones of the opponent, thereby also matching its movements.
 
 With these changes, arrows now stay in the scene and can be picked up after being shot.
+
+<video width="600" alt="arrows sticking to opponent" src="{{ '/images/sticking-arrows.mp4' | relative_url }}">
 
 ## Balancing
 
