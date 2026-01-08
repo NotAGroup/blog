@@ -4,6 +4,14 @@ title:  "Week 5"
 categories: jekyll update
 ---
 
+## Lighting
+
+Until now, the lighting data for our scene is the default one (in particular, using a skybox and directional light).
+I switched the lighting entirely to the torches placed in the dungeon and regenerated lighting data.
+Further, I implemented flickering behaviour for the torches, based on a poisson distribution.
+
+<video width="300" alt="lighting based on torches with flickering effect" src="{{ '/images/torches.mp4' | relative_url }}">
+
 ## UI
 
 Added a crosshair and a text element to the UI to show that the player can interact with an object.
