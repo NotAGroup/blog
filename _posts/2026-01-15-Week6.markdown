@@ -31,3 +31,29 @@ By Rene Tischler
 Movement and Attack animations of the opponents and the player now scale with their corresponding factors given in the stats. Additionally, the player animations have been made generally slower as they were looking whimsical, especially when sprinting. The combat animation layer for the player now also uses an avatar mask so that it only applies to the relevant parts of the player model. The bow and quiver models have been added to the player prefab and become visible only when in the corresponding firing mode. Some setup work has been done to use the proper bow animations when the bow is in use, however a new shooting mechanic is going to be required to make proper use of the draw and release animations where the player first has to draw the bow, and the shot is only made on release. As such, the bow animations are still unfinished.
 
 By Moritz Mahling
+
+## Items
+
+Extended the logic for item definitions such that we can define items that 
+affect players stats. As an example, added an item ('rune of swiftness', 
+currently without proper assets) that makes the player faster.
+
+## Player Input & UI
+
+Switched to the new input system of unity with a mix of polling and callbacks.
+Configured the action maps for the player and the ui to match the mappings that
+were previously hardcoded.
+This step enables us to easily reconfigure the input bindings and optionally 
+define different handling of tapping or holding keys.
+
+For the UI, I refactored our implementation of the ui state machine
+  (Gameplay, Inventory, Upgrades, Pause, DeathScreen)
+to be more 
+robust and configurable/extensible. Now, we can specify a set of ui elements and
+for each, in which states it should be enabled.
+Further, cursor lock can be configured for each ui state.
+In addition, I added the possibility to configure enabling/disabling of input 
+action maps and individual actions depending on the ui state.
+
+By Axel Schneewind
+
