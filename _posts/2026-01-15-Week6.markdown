@@ -38,7 +38,41 @@ Extended the logic for item definitions such that we can define items that
 affect players stats. As an example, added an item ('rune of swiftness', 
 currently without proper assets) that makes the player faster.
 
-## Player Input & UI
+## UI
+
+The ui for player upgrades now shows the effect of an upgrade.
+For example, when selecting the 'Agility' stat, a ui element
+shows that upgrading the stat increases increases movement speed
+by a factor xy.
+
+<img width="300" alt="preview of upgrade effects" src="{{ '/images/upgrade-preview.png' | relative_url }}">
+
+The ui for items now shows a description of the item and its effects
+(if it has any). E.g. for the 'rune of swiftness', it shows the player
+that the item increases movement speed by some factor.
+
+<img width="300" alt="inventory with item information" src="{{ '/images/inventory-item-info.png' | relative_url }}">
+
+For the final game, we have to add proper sprites and define display names
+for the stats that are displayed as seen above 
+(which simply use enum identifiers currently).
+
+## Under-the-hood code improvements
+
+### Scene initialization
+
+Until now, all initialization logic of a level was spread out across the
+`Start`-methods of multiple scripts, including Dungeon creation, reading 
+game state files, computation of player stats.
+This is not robust, as the order in which these methods are called is 
+unspecified and might not even happen sequentially.
+
+I implemented a component that triggers a UnityEvent when its start-method is
+called. For this event, we can configure in the editor which setup-methods
+to call in which order. With that we can configure the initialization process
+in one place. 
+
+### Player Input
 
 Switched to the new input system of unity with a mix of polling and callbacks.
 Configured the action maps for the player and the ui to match the mappings that
@@ -46,9 +80,9 @@ were previously hardcoded.
 This step enables us to easily reconfigure the input bindings and optionally 
 define different handling of tapping or holding keys.
 
-For the UI, I refactored our implementation of the ui state machine
-  (Gameplay, Inventory, Upgrades, Pause, DeathScreen)
-to be more 
+### UI
+
+For the UI, I refactored our implementation of the ui state machine to be more 
 robust and configurable/extensible. Now, we can specify a set of ui elements and
 for each, in which states it should be enabled.
 Further, cursor lock can be configured for each ui state.
