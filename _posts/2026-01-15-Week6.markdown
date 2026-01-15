@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Week 6"
+categories: jekyll update
+---
+
+## Combat System & Enemy Behavior
+
+To improve code clarity, old unused scripts for the swords were removed.
+Furthermore, the hit zone and opponent classes were made abstract in order to inherit them and avoid code duplication.
+
+The behavior of the melee skeleton has been revised.
+As soon as it reaches a nav point, the skeleton turns toward the center of the room to look around.
+This increases the probability that the player will be seen.
+If the skeleton is hit by an arrow while walking, it now stops and turns in the direction the arrow came from.
+
+These changes are preparations to enable additional types of opponents.
+We are currently working on adding a ranged skeleton.
+A corresponding prefab has already been created, and the corresponding animator controller that uses the necessary animations is currently being created.
+
+The number of error messages caused by the RuntimeNavMeshBuilder has been drastically reduced.
+To achieve this, models that are irrelevant for the movement freedom of opponents have been moved to other layers.
+For models that are relevant, the NavMeshObstacle component has been moved to the correct object.
+This led to a more reliable construction of the NavMesh.
+Now only TextMesh Pro meshes cause error messages at startup, even though they are located in their own UI layer, which should be ignored by the RuntimeNavMeshBuilder.
+
+By Rene Tischler
