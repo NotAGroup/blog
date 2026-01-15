@@ -25,3 +25,9 @@ This led to a more reliable construction of the NavMesh.
 Now only TextMesh Pro meshes cause error messages at startup, even though they are located in their own UI layer, which should be ignored by the RuntimeNavMeshBuilder.
 
 By Rene Tischler
+
+## Animations
+
+Movement and Attack animations of the opponents and the player now scale with their corresponding factors given in the stats. Additionally, the player animations have been made generally slower as they were looking whimsical, especially when sprinting. The combat animation layer for the player now also uses an avatar mask so that it only applies to the relevant parts of the player model. The bow and quiver models have been added to the player prefab and become visible only when in the corresponding firing mode. Some setup work has been done to use the proper bow animations when the bow is in use, however a new shooting mechanic is going to be required to make proper use of the draw and release animations where the player first has to draw the bow, and the shot is only made on release. As such, the bow animations are still unfinished.
+
+By Moritz Mahling
