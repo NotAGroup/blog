@@ -91,3 +91,10 @@ action maps and individual actions depending on the ui state.
 
 By Axel Schneewind
 
+## Boss Room
+
+The Door is functional and has animation, next steps are some improvments of the material, parralel to integrating it into the dungeon creation.
+
+![](images/boss-door-unity-1.png){: height="250ex"}
+
+By David Ruff
