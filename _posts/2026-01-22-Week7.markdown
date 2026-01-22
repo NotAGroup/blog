@@ -44,3 +44,17 @@ is swapped only after releasing it.
 Mouse-based item swapping has to be implemented stil.
 
 By Axel Schneewind
+
+### Infrastrukur
+Today we reached the lfs quota limits of the free plan. 
+To be more precise the bandwith quota. The result was that none could pull and by extend not push either.
+That was also the case for the ci/cd building and deploying th blog.
+So big changes need to be made quickly.
+
+The blog got all lfs objects (pictures and videos removed). They are now brought via nextcloud onto my server. 
+There they get served via a simple nginx. Then all links in the blog needed to be updated.
+
+For the main repo it was a bit more tricky. At the end we moved to the uni-stuttgart github instance. At least for now.
+Moving was a bit of hassle because i couldn't just pull the newest version.
+
+By David Ruff
