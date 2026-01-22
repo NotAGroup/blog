@@ -11,7 +11,7 @@ I switched the lighting entirely to the torches placed in the dungeon and regene
 Further, I implemented flickering behaviour for the torches, based on a poisson distribution.
 
 <video width="600" alt="lighting based on torches with flickering effect">
-    <source src="{{ '/images/torches.mp4' | relative_url }}" type="video/mp4">
+    <source src="{{site.imgpath}}/torches.mp4" type="video/mp4">
 </video>
 
 ## UI
@@ -27,7 +27,7 @@ In particular, arrows now get attached to the animation bones of the opponent, t
 With these changes, arrows now stay in the scene and can be picked up after being shot.
 
 <video width="600" alt="arrows sticking to opponent">
-    <source src="{{ '/images/sticking-arrows.mp4' | relative_url }}" type="video/mp4">
+    <source src="{{site.imgpath}}/sticking-arrows.mp4" type="video/mp4">
 </video>
 
 ## Balancing
@@ -91,12 +91,12 @@ By Rene Tischler
 ## More Models 
 We have new improved sword model, for player and enemies.
 
-![](images/sword.png){: height="250ex"}
+![]({{site.imgpath}}/sword.png){: height="250ex"}
 
 and some foliage sounds for the sword.
 
 ...and i began working on the door for the boss room.
-![The images shows a 3dmodel of a two part door that has a big skull as decoration on it. You can als see some rigging for it](images/boss-door-1.png){:height="300ex"}
+![The images shows a 3dmodel of a two part door that has a big skull as decoration on it. You can als see some rigging for it]({{site.imgpath}}/boss-door-1.png){:height="300ex"}
 
 I am currently working on the animation for the door. Next steps are materials foliage for it.
 

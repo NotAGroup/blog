@@ -41,7 +41,7 @@ The persistent data is registered to the game saving system developed by David.
 
 The player can now upgrade their stats using XP. For this, logic for defining upgrade cost is added. Further, a UI is added that shows current stat levels and allows the player to upgrade them.
 
-<img width="300"  alt="Upgrade UI" src="/images/upgrade-ui.png">
+<img width="300"  alt="Upgrade UI" src="{{site.imgpath}}/upgrade-ui.png">
 
 Other small contributions: Improved gamepad mappings for UIs and stick-based camera movement. Added the assets for table and trapdoor to the respective prefabs.
 
@@ -59,7 +59,7 @@ So this week I fixed these problems. The scaling probleme was fixed quite easy, 
 For the second probleme I corrected the scaling and positioning of the Wall Objects. I placed the Pillar Asset Rene
 created in the corners and with that it looked way better, although I noticed that for a corridor one wall wasn't generated, so some bugs remain which have to be fixed soon.
 
-<img width="300"  alt="Black Sun" src="/images/black_sun.png">
+<img width="300"  alt="Black Sun" src="{{site.imgpath}}/black_sun.png">
 
 By Sven Gerber
 
