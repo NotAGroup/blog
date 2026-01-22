@@ -12,16 +12,16 @@ In order to make this possible, we decided that the player must interact with an
 In our case, a trapdoor.
 This trapdoor was created together with the appropriate base, metallic, and normal textures in Blender.
 
-<img width="300"  alt="Trapdoor" src="{{ '/images/trapdoor.png' | relative_url }}">
+<img width="300"  alt="Trapdoor" src="{{site.imgpath}}/trapdoor.png">
 
 To enhance our shop, which can be found in the dungeon, a model of an old table was created.
 Wood and fabric materials and the corresponding textures were created for this table.
 
-<img width="300"  alt="Table" src="{{ '/images/table.png' | relative_url }}">
+<img width="300"  alt="Table" src="{{site.imgpath}}/table.png">
 
 To make the existing skeleton soldier more visually appealing, suitable color and metallic textures were created.
 
-<img width="300"  alt="Textured Skeleton" src="{{ '/images/textured-skeleton.png' | relative_url }}">
+<img width="300"  alt="Textured Skeleton" src="{{site.imgpath}}/textured-skeleton.png">
 
 By Rene Tischler
 
@@ -41,7 +41,7 @@ The persistent data is registered to the game saving system developed by David.
 
 The player can now upgrade their stats using XP. For this, logic for defining upgrade cost is added. Further, a UI is added that shows current stat levels and allows the player to upgrade them.
 
-<img width="300"  alt="Upgrade UI" src="{{ '/images/upgrade-ui.png' | relative_url }}">
+<img width="300"  alt="Upgrade UI" src="/images/upgrade-ui.png">
 
 Other small contributions: Improved gamepad mappings for UIs and stick-based camera movement. Added the assets for table and trapdoor to the respective prefabs.
 
@@ -59,7 +59,7 @@ So this week I fixed these problems. The scaling probleme was fixed quite easy, 
 For the second probleme I corrected the scaling and positioning of the Wall Objects. I placed the Pillar Asset Rene
 created in the corners and with that it looked way better, although I noticed that for a corridor one wall wasn't generated, so some bugs remain which have to be fixed soon.
 
-<img width="300"  alt="Black Sun" src="{{ '/images/black_sun.png' | relative_url }}">
+<img width="300"  alt="Black Sun" src="/images/black_sun.png">
 
 By Sven Gerber
 

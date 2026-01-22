@@ -9,18 +9,18 @@ After we decided what our game should be, we started working on it.
 
 Finish basic creation of Skeletton soldier.
 
-<img width="300" height="400" alt="Skeleton Soldier" src="{{ '/images/skeleton-soldier.png' | relative_url }}">
+<img width="300" height="400" alt="Skeleton Soldier" src="{{site.imgpath}}/skeleton-soldier.png">
 
 By Guanpu Tian
 
 A material for a brick wall with a diffuse, displacement, and normal texture was created.
 Which will not be used for now because Unity does not support displacement maps.
 
-<img width="300" height="400" alt="Brick Wall Texture" src="{{ '/images/brick-wall-texture.png' | relative_url }}">
+<img width="300" height="400" alt="Brick Wall Texture" src="{{site.imgpath}}/brick-wall-texture.png">
 
 Furthermore, a custom low poly wall model with a baked normal map was created for the dungeon generation.
 
-<img width="300" height="400" alt="Dungeon Wall" src="{{ '/images/wall.png' | relative_url }}">
+<img width="300" height="400" alt="Dungeon Wall" src="{{site.imgpath}}/wall.png">
 
 By Rene Tischler
 
@@ -28,7 +28,7 @@ By Rene Tischler
 
 Added scripts and prefabs for a shop (currently without proper assets).
 
-<img width="300" alt="shop with three items" src="{{ '/images/Shop_Initial.png' | relative_url }}">
+<img width="300" alt="shop with three items" src="{{site.imgpath}}/Shop_Initial.png">
 
 The shop can be placed into rooms by the level generator
 (currently with constant probability for any room, with 3 random items).
@@ -48,7 +48,7 @@ In the previous version a Wall Asset with width and length of 1 was used for cre
 in a lot of generated Wall Assets in one Dungeon which leads to performance issues. To fix this, the lengths and widths of the
 rooms are used as the scale for the Wall Asset and therefore one Wall Asset is used for one Wall. The scaling is not perfect,
 but preformancewise its way cheaper but that all has to be worked over again with the new Wall Assets from Rene.
-<img width="300" alt="shop with three items" src="{{ '/images/wall_gen_old.png' | relative_url }}"> <img width="300" alt="shop with three items" src="{{ '/images/wall_gen_new.png' | relative_url }}">
+<img width="300" alt="shop with three items" src="{{site.imgpath}}/wall_gen_old.png"> <img width="300" alt="shop with three items" src="{{site.imgpath}}/wall_gen_new.png">
 
 Old Wall Generation vs New Wall Generation
 

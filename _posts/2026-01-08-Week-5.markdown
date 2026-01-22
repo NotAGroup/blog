@@ -42,13 +42,13 @@ By Axel Schneewind
 Minor flaws in the mesh of the existing bow and quiver models were fixed.
 Textures and materials were then created for these models.
 
-<img width="300" alt="Textured Bow" src="{{ '/images/textured-bow.png' | relative_url }}">
+<img width="300" alt="Textured Bow" src="{{site.imgpath}}/textured-bow.png">
 
-<img height="400" alt="Textured Quiver" src="{{ '/images/textured-quiver.png' | relative_url }}">
+<img height="400" alt="Textured Quiver" src="{{site.imgpath}}/textured-quiver.png">
 
 Textures and materials were also created for the new warrior model designed by Guanpu Tian.
 
-<img width="300" alt="Textured Warrior" src="{{ '/images/textured-warrior.png' | relative_url }}">
+<img width="300" alt="Textured Warrior" src="{{site.imgpath}}/textured-warrior.png">
 
 By Rene Tischler
 
@@ -60,17 +60,17 @@ This makes the scene hierarchy much less cluttered.
 
 Furthermore, ceiling meshes are now also generated. Both the floor and the ceiling now use their intended materials.
 
-<img width="300" alt="Current Game View" src="{{ '/images/floor-ceiling.png' | relative_url }}">
+<img width="300" alt="Current Game View" src="{{site.imgpath}}/floor-ceiling.png">
 
 Torches are also placed as evenly as possible on the walls so that they can illuminate the dungeon in the future.
 
-<img width="300" alt="Placed Torches" src="{{ '/images/placed-torches.png' | relative_url }}">
+<img width="300" alt="Placed Torches" src="{{site.imgpath}}/placed-torches.png">
 
 By Rene Tischler
 
 ## Awkward Corridor Fix
 
-<img width="300" alt="Awkward Corridor Example" src="{{ '/images/akward_corridor.png' | relative_url }}">
+<img width="300" alt="Awkward Corridor Example" src="{{site.imgpath}}/akward_corridor.png">
 
 During the dungeon creation the calculations of the corridors could end in "awkward" corridors, how we call them.
 The Problem can be seen in the reference picture. The Algorithm could choose the left room to connect to the bottom room.

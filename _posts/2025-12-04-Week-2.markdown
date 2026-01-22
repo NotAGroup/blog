@@ -15,7 +15,7 @@ For an item, attributes such as display-name, models for rendering, probabilitie
 Further, the Inventory-component is added, which stores the players items in a
 configurable number of slots.
 
-<img width="300" alt="Item hotbar and shop interaction" src="{{ '/images/items.gif' | relative_url }}">
+<img width="300" alt="Item hotbar and shop interaction" src="{{site.imgpath}}/items.gif">
 
 For visualization using a hotbar, ui components are added. Available items
 are shown at the bottom of the screen. Usage using number keys has already been implemented.
@@ -33,12 +33,12 @@ By Axel Schneewind
 
 For the dungeon generation, a low-poly pillar model with a baked normal map was created in Blender to match the walls.
 
-<img width="300" height="400" alt="Dungeon Pillar" src="{{ '/images/pillar.png' | relative_url }}">
+<img width="300" height="400" alt="Dungeon Pillar" src="{{site.imgpath}}/pillar.png">
 
 Furthermore, a torch model with a normal, metallic, and diffuse texture was created, and a prefab was made to light up the dungeon.
 
-<img width="340" height="340" alt="Torch" src="{{ '/images/torch.png' | relative_url }}">
-<img width="600" height="340" alt="Torch Prefab" src="{{ '/images/torch-prefab.png' | relative_url }}">
+<img width="340" height="340" alt="Torch" src="{{site.imgpath}}/torch.png">
+<img width="600" height="340" alt="Torch Prefab" src="{{site.imgpath}}/torch-prefab.png">
 
 By Rene Tischler
 

@@ -45,13 +45,13 @@ For example, when selecting the 'Agility' stat, a ui element
 shows that upgrading the stat increases increases movement speed
 by a factor xy.
 
-<img width="300" alt="preview of upgrade effects" src="{{ '/images/upgrade-preview.png' | relative_url }}">
+<img width="300" alt="preview of upgrade effects" src="{{site.imgpath}}/upgrade-preview.png">
 
 The ui for items now shows a description of the item and its effects
 (if it has any). E.g. for the 'rune of swiftness', it shows the player
 that the item increases movement speed by some factor.
 
-<img width="300" alt="inventory with item information" src="{{ '/images/inventory-item-info.png' | relative_url }}">
+<img width="300" alt="inventory with item information" src="{{site.imgpath}}/inventory-item-info.png">
 
 For the final game, we have to add proper sprites and define display names
 for the stats that are displayed as seen above 

@@ -8,7 +8,7 @@ categories: jekyll update
 
 Added Scripts and prefabs for displaying and managing the players inventory.
 
-<img width="300" alt="Inventory UI, moving items between slots" src="{{ '/images/inventory.gif' | relative_url }}">
+<img width="300" alt="Inventory UI, moving items between slots" src="{{site.imgpath}}/inventory.gif">
 
 Currently, the inventory can be opened by pressing 'E'.
 Item slots can be selected using WASD-keys.
@@ -30,23 +30,23 @@ By Axel Schneewind
 
 Textures were created for the wall, pillar and wall torch models to give them a stone-like appearance.
 
-<img width="300" alt="Stone Wall" src="{{ '/images/stone-wall.png' | relative_url }}">
+<img width="300" alt="Stone Wall" src="{{site.imgpath}}/stone-wall.png">
 
 Appropriate textures and materials were also created for the ceiling and floor to match the dungeon.
 
-<img width="300" alt="Ceiling and Floor" src="{{ '/images/ceiling-floor.png' | relative_url }}">
+<img width="300" alt="Ceiling and Floor" src="{{site.imgpath}}/ceiling-floor.png">
 
 Enemies and destructible objects should be able to drop coins.
 These can be used by players to purchase items in the shop.
 A model of a pile of coins with appropriate textures and materials was created in Blender for this purpose.
 
-<img width="300" alt="Coin Pile" src="{{ '/images/coin-pile.png' | relative_url }}">
+<img width="300" alt="Coin Pile" src="{{site.imgpath}}/coin-pile.png">
 
 Currently, the player only shoots gray balls as projectiles.
 To enable the player to shoot arrows as an archer in the future, a suitable model with textures was also created.
 
 
-<img width="300" alt="Arrow" src="{{ '/images/arrow.png' | relative_url }}">
+<img width="300" alt="Arrow" src="{{site.imgpath}}/arrow.png">
 
 By Rene Tischler
 

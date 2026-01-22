@@ -25,7 +25,7 @@ Unfortunately, I didn't find a way to have the camera background initialized wit
 pixels. For this reason I currently use a green-screen-like approach where a configured
 background color is replaced with transparent pixels.
 
-<img width="300" alt="inventory with new sprites" src="{{ '/images/inventory-fancy.png' | relative_url }}">
+<img width="300" alt="inventory with new sprites" src="{{site.imgpath}}/inventory-fancy.png">
 
 ### Inventory
 
