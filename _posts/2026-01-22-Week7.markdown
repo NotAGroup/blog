@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "Week 7"
+categories: jekyll update
+---
+
+## UI
+
+### Sprites
+
+Added sprites for different ui elements, so when don't have to use the default
+sprite of unity. The decoration pattern for the windows has been inspired by 
+the UI of Skyrim.
+
+### Item rendering
+
+Until now, we couldn't display items in the ui (inventory and hotbar). I created 
+a scene with a script that can be used to render arbitrary objects (e.g. items and currencies)
+into a texture. The script attaches a callback to the `endCameraRendering`-event of URP
+and writes the rendertexture of the camera into a file.
+With this scene, we can easily create textures for items with 
+consistent lighting.
+
+Unfortunately, I didn't find a way to have the camera background initialized with transparent
+pixels. For this reason I currently use a green-screen-like approach where a configured
+background color is replaced with transparent pixels.
+
+<img width="300" alt="inventory with new sprites" src="{{ '/images/inventory-fancy.png' | relative_url }}">
+
+### Inventory
+
+From player-feedback we concluded that we would like to disallow arrows from
+being automatically placed in the hotbar.
+I added a filter by specifying per slot what types of items can be 
+automatically placed in it. 
+
+Improved item swapping in the inventory. Until now, grabbing an item 
+and navigating through the item slots caused the grabbed item to be swapped
+to the next slot on each navigation step. This is unintuitive and not 
+suited for mouse-based item dragging.
+For this reason I rewrote the swapping semantics such that a grabbed item 
+is swapped only after releasing it.
+
+Mouse-based item swapping has to be implemented stil.
+
+By Axel Schneewind
