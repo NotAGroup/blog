@@ -88,7 +88,7 @@ A minor bug that prevented the game save file from loading correctly has been fi
 
 By Rene Tischler
 
-## More Models 
+## More Models
 We have new improved sword model, for player and enemies.
 
 ![]({{site.imgpath}}/sword.png){: height="250ex"}
@@ -100,7 +100,7 @@ and some foliage sounds for the sword.
 
 I am currently working on the animation for the door. Next steps are materials foliage for it.
 
-Also some blog documentation and bug minor bug fixes. etc. 
+Also some blog documentation and bug minor bug fixes. etc.
 
 By David Ruff
 

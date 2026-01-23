@@ -34,8 +34,8 @@ By Moritz Mahling
 
 ## Items
 
-Extended the logic for item definitions such that we can define items that 
-affect players stats. As an example, added an item ('rune of swiftness', 
+Extended the logic for item definitions such that we can define items that
+affect players stats. As an example, added an item ('rune of swiftness',
 currently without proper assets) that makes the player faster.
 
 ## UI
@@ -54,7 +54,7 @@ that the item increases movement speed by some factor.
 <img width="300" alt="inventory with item information" src="{{site.imgpath}}/inventory-item-info.png">
 
 For the final game, we have to add proper sprites and define display names
-for the stats that are displayed as seen above 
+for the stats that are displayed as seen above
 (which simply use enum identifiers currently).
 
 ## Under-the-hood code improvements
@@ -62,31 +62,31 @@ for the stats that are displayed as seen above
 ### Scene initialization
 
 Until now, all initialization logic of a level was spread out across the
-`Start`-methods of multiple scripts, including Dungeon creation, reading 
+`Start`-methods of multiple scripts, including Dungeon creation, reading
 game state files, computation of player stats.
-This is not robust, as the order in which these methods are called is 
+This is not robust, as the order in which these methods are called is
 unspecified and might not even happen sequentially.
 
 I implemented a component that triggers a UnityEvent when its start-method is
 called. For this event, we can configure in the editor which setup-methods
 to call in which order. With that we can configure the initialization process
-in one place. 
+in one place.
 
 ### Player Input
 
 Switched to the new input system of unity with a mix of polling and callbacks.
 Configured the action maps for the player and the ui to match the mappings that
 were previously hardcoded.
-This step enables us to easily reconfigure the input bindings and optionally 
+This step enables us to easily reconfigure the input bindings and optionally
 define different handling of tapping or holding keys.
 
 ### UI
 
-For the UI, I refactored our implementation of the ui state machine to be more 
+For the UI, I refactored our implementation of the ui state machine to be more
 robust and configurable/extensible. Now, we can specify a set of ui elements and
 for each, in which states it should be enabled.
 Further, cursor lock can be configured for each ui state.
-In addition, I added the possibility to configure enabling/disabling of input 
+In addition, I added the possibility to configure enabling/disabling of input
 action maps and individual actions depending on the ui state.
 
 By Axel Schneewind

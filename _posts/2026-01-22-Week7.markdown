@@ -9,16 +9,16 @@ categories: jekyll update
 ### Sprites
 
 Added sprites for different ui elements, so when don't have to use the default
-sprite of unity. The decoration pattern for the windows has been inspired by 
+sprite of unity. The decoration pattern for the windows has been inspired by
 the UI of Skyrim.
 
 ### Item rendering
 
-Until now, we couldn't display items in the ui (inventory and hotbar). I created 
+Until now, we couldn't display items in the ui (inventory and hotbar). I created
 a scene with a script that can be used to render arbitrary objects (e.g. items and currencies)
 into a texture. The script attaches a callback to the `endCameraRendering`-event of URP
 and writes the rendertexture of the camera into a file.
-With this scene, we can easily create textures for items with 
+With this scene, we can easily create textures for items with
 consistent lighting.
 
 Unfortunately, I didn't find a way to have the camera background initialized with transparent
@@ -31,14 +31,14 @@ background color is replaced with transparent pixels.
 
 From player-feedback we concluded that we would like to disallow arrows from
 being automatically placed in the hotbar.
-I added a filter by specifying per slot what types of items can be 
-automatically placed in it. 
+I added a filter by specifying per slot what types of items can be
+automatically placed in it.
 
-Improved item swapping in the inventory. Until now, grabbing an item 
+Improved item swapping in the inventory. Until now, grabbing an item
 and navigating through the item slots caused the grabbed item to be swapped
-to the next slot on each navigation step. This is unintuitive and not 
+to the next slot on each navigation step. This is unintuitive and not
 suited for mouse-based item dragging.
-For this reason I rewrote the swapping semantics such that a grabbed item 
+For this reason I rewrote the swapping semantics such that a grabbed item
 is swapped only after releasing it.
 
 Mouse-based item swapping has to be implemented stil.
@@ -46,12 +46,12 @@ Mouse-based item swapping has to be implemented stil.
 By Axel Schneewind
 
 ### Infrastrukur
-Today we reached the lfs quota limits of the free plan. 
+Today we reached the lfs quota limits of the free plan.
 To be more precise the bandwith quota. The result was that none could pull and by extend not push either.
 That was also the case for the ci/cd building and deploying th blog.
 So big changes need to be made quickly.
 
-The blog got all lfs objects (pictures and videos removed). They are now brought via nextcloud onto my server. 
+The blog got all lfs objects (pictures and videos removed). They are now brought via nextcloud onto my server.
 There they get served via a simple nginx. Then all links in the blog needed to be updated.
 
 For the main repo it was a bit more tricky. At the end we moved to the uni-stuttgart github instance. At least for now.
@@ -60,3 +60,17 @@ Moving was a bit of hassle because i couldn't just pull the newest version.
 Sadly some changes of this week where lost.
 
 By David Ruff
+
+### Enemy Behavior
+
+Our second opponent, the ranged skeleton, now spawns in the dungeon.
+At the start of the game, this skeleton finds the most central point possible in its spawn room and looks alternately in the direction of the corridors connecting the room to the rest of the dungeon.
+This is to ensure that the ranged skeleton is very likely to spot and attack the player.
+
+Nevertheless, it is still possible to sneak up on the skeleton and attack it with clever timing.
+If the player gets too close to the skeleton, it will try to maintain a minimum distance and run towards one of the nav points in the room.
+
+There still seems to be a glitch in both enemy types that causes the skeleton to freeze and no longer react to the player.
+This bug needs to be fixed as soon as possible.
+
+By Rene Tischler
