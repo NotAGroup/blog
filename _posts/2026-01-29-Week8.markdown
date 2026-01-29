@@ -14,6 +14,12 @@ Appropriate textures and materials were created for this model.
 
 By Rene Tischler
 
+## Assets 2
+
+Also the Boss room door is now exported and integrated into unity
+
+By David Ruff
+
 ## Enemy Behavior
 
 To eliminate the glitch that caused our two opponent types to freeze during combat,
