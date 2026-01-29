@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Week 8"
+categories: jekyll update
+---
+
+## Assets
+
+This week, Guanpu Tian added our first boss monster model.
+The model represents some sort of demonic overlord.
+Appropriate textures and materials were created for this model.
+
+<img width="300" alt="Demonic Overlord" src="{{site.imgpath}}/overlord.png">
+
+By Rene Tischler
+
+## Enemy Behavior
+
+To eliminate the glitch that caused our two opponent types to freeze during combat,
+the base class and the two skeleton classes were reworked again.
+Several variables that allowed the skeletons to enter an undefined state, from which they could not recover,
+were removed and replaced with an enum variable for determining their state.
+This ensured the desired state stability.
+Furthermore, for better handling, we switched to coroutines for the hit zone and projectiles.
+This allows us to better coordinate with the animations without the need for all the timers in the update function.
+
+By Rene Tischler

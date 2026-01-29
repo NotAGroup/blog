@@ -45,7 +45,7 @@ Mouse-based item swapping has to be implemented stil.
 
 By Axel Schneewind
 
-### Infrastrukur
+## Infrastrukur
 Today we reached the lfs quota limits of the free plan.
 To be more precise the bandwith quota. The result was that none could pull and by extend not push either.
 That was also the case for the ci/cd building and deploying th blog.
@@ -61,7 +61,7 @@ Sadly some changes of this week where lost.
 
 By David Ruff
 
-### Enemy Behavior
+## Enemy Behavior
 
 Our second opponent, the ranged skeleton, now spawns in the dungeon.
 At the start of the game, this skeleton finds the most central point possible in its spawn room and looks alternately in the direction of the corridors connecting the room to the rest of the dungeon.
