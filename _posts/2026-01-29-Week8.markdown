@@ -25,3 +25,40 @@ Furthermore, for better handling, we switched to coroutines for the hit zone and
 This allows us to better coordinate with the animations without the need for all the timers in the update function.
 
 By Rene Tischler
+
+
+## Level Generation (Items)
+
+Improved loot placement in the level. 
+Until now, we only had chests with some random items as loot.
+
+Now, I implemented attaching loot to any object such that the loot gets dropped 
+on destruction. With that, we can attach loot to enemies and have them drop it 
+when dying. 
+
+I improved the level generation such that first, a budget of loot is sampled.
+Here, the level parameters are used (available gold, available xp, ammunition per enemy).
+Then, when placing chests and enemies in the scene, random loot from that budget
+can be added to them.
+Further, now the dungeon creator also places one large chest in the level, which
+has more loot. The loot for this large chest is sampled from an exponential 
+distribution (independent of loot budget), to make it more unpredictable.
+
+## Level Generation
+
+Tweaked torch placement such that we have them slightly further spaced.
+Increased the intensity of torches such that the dungeon remains bright enough.
+Also, until now we had 3 light sources per torch, which I now replaced by one
+such that we dont get issues with limitations in the number of light sources.
+
+### Enemies spawning
+
+Enhanced enemy spawning. Now these get spawned in a (poisson distributed)
+number of groups, each with a poisson distributed number of enemies.
+
+I use poisson distributions because they make it easy to balance the expected
+amount and expected number of enemy groups per level, while still achieving
+a lot of perceived randomness and unpredictability.
+
+Axel Schneewind
+
