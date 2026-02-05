@@ -16,10 +16,7 @@ color of the scene to be a bluish gray, which is visible
 in unlit areas. This gives the dungeon a colder touch and enhances
 the contrast to bright areas around the torches.
 
-Experimented with enabling/disabling torches depending on the players 
-position as we currently have a high number of light sources 
-(unity gives out warnings about it being to high for the given shadow
-atlas size).
+<img width="300" alt="Improved flickering" src="{{site.imgpath}}/torch-flicker.gif">
 
 ## UI
 
