@@ -1,0 +1,51 @@
+---
+layout: post
+title:  "Week 9"
+categories: jekyll update
+---
+
+## Lighting
+
+Improved the flickering effect on the torches by introducing a
+mass-spring-damper model that simulates the intensity swinging
+back to normal after a flicker 'event' occured. This looks far 
+more natural than the exponential falloff we used so far.
+
+Set the torch color to be slightly more neutral. Set the ambient
+color of the scene to be a bluish gray, which is visible
+in unlit areas. This gives the dungeon a colder touch and enhances
+the contrast to bright areas around the torches.
+
+Experimented with enabling/disabling torches depending on the players 
+position as we currently have a high number of light sources 
+(unity gives out warnings about it being to high for the given shadow
+atlas size).
+
+## UI
+
+Implemented mouse-based input for the inventory and upgrade screen.
+In the inventory, items can be moved by clicking the source and slots.
+
+Added two ui elements that show the total number of specific items.
+One is added to display all items of ammunition type (i.e. arrows)
+with their respective count in the inventory. A second one is added
+to show all buff items in the inventory (i.e. runes) with their counts.
+This way, the player can always see how many arrows they have left
+without opening the inventory.
+
+Further, switched most UI components (mainly those related to inventory
+and upgrades) to event-based updating instead of polling.
+This nice performance-wise as ui elements might have to do some computation
+that should not be performed each frame (e.g. the new uis mentioned above
+have to traverse the whole inventory to compute their numbers).
+
+## Balancing
+
+Filled out missing definitions for player upgrades and removed the
+perception stat as it is not really used currently and would require
+changes to game logic. 
+I implemented the soft class system as mentioned in the presentation.
+
+By Axel Schneewind
+
+
