@@ -46,3 +46,16 @@ I implemented the soft class system as mentioned in the presentation.
 By Axel Schneewind
 
 
+## last Touches on the Boss Door.
+I integrated the boss door animation and made some last adjustments.
+It wasnt exactly clear if the legacy or the modern animation system would be better.
+While i startet with the legacy System. It was not able to make it work, or rather make it not work.
+It imedatly openend at the beginning of the level.
+So i switch over to the modern system. While i had some problem figuring it out, i havent used it before. I made it work.
+Now we have Barricade to the bossroom that only opens when the level is cleared.
+
+## Healthbar
+I tried implementing health indicators. the should consist of two parts. The enemies shoud light up or have particle effects when taking damage and all Enemies should get a healthbar.
+Right above there heads...or whatever the slimes have.
+After an Disucssion if we should use a bunch of canvases or one whole canvas. I decided to simply use a plane, for everyone.
+Always Turning in the direction of the player. But i ran out of Time before i could got it to work.
