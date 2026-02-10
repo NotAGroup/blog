@@ -8,7 +8,7 @@ categories: jekyll update
 
 Improved the flickering effect on the torches by introducing a
 mass-spring-damper model that simulates the intensity swinging
-back to normal after a flicker 'event' occured. This looks far 
+back to normal after a flicker 'event' occurred. This looks far
 more natural than the exponential falloff we used so far.
 
 Set the torch color to be slightly more neutral. Set the ambient
@@ -17,6 +17,8 @@ in unlit areas. This gives the dungeon a colder touch and enhances
 the contrast to bright areas around the torches.
 
 <img width="300" alt="Improved flickering" src="{{site.imgpath}}/torch-flicker.gif">
+
+By Axel Schneewind
 
 ## UI
 
@@ -36,26 +38,68 @@ This nice performance-wise as ui elements might have to do some computation
 that should not be performed each frame (e.g. the new uis mentioned above
 have to traverse the whole inventory to compute their numbers).
 
+By Axel Schneewind
+
+A damage indicator has been added to provide the player with better feedback during combat.
+This indicator turns the screen border red when the player takes damage.
+The intensity and fade-out time depends on the player's remaining health.
+
+By Rene Tischler
+
 ## Balancing
 
 Filled out missing definitions for player upgrades and removed the
 perception stat as it is not really used currently and would require
-changes to game logic. 
+changes to game logic.
 I implemented the soft class system as mentioned in the presentation.
 
 By Axel Schneewind
 
 
-## last Touches on the Boss Door.
+## Last touches on the boss door
+
 I integrated the boss door animation and made some last adjustments.
-It wasnt exactly clear if the legacy or the modern animation system would be better.
-While i startet with the legacy System. It was not able to make it work, or rather make it not work.
-It imedatly openend at the beginning of the level.
-So i switch over to the modern system. While i had some problem figuring it out, i havent used it before. I made it work.
-Now we have Barricade to the bossroom that only opens when the level is cleared.
+It wasn't exactly clear if the legacy or the modern animation system would be better.
+While i started with the legacy System. It was not able to make it work, or rather make it not work.
+It opened immediately at the beginning of the level.
+So i switch over to the modern system. While i had some problem figuring it out, i haven't used it before. I made it work.
+Now we have a barricade to the boss room that only opens when the level is cleared.
 
 ## Healthbar
-I tried implementing health indicators. the should consist of two parts. The enemies shoud light up or have particle effects when taking damage and all Enemies should get a healthbar.
-Right above there heads...or whatever the slimes have.
-After an Disucssion if we should use a bunch of canvases or one whole canvas. I decided to simply use a plane, for everyone.
-Always Turning in the direction of the player. But i ran out of Time before i could got it to work.
+
+I tried implementing health indicators. These should consist of two parts.
+The enemies should light up or have particle effects when taking damage, and all enemies should get a health bar.
+Right above there heads... or whatever the slimes have.
+After a discussion if we should use a bunch of canvases or one whole canvas.
+I decided to simply use a plane, for everyone.
+Always turning in the direction of the player. But i ran out of time before i could got it working.
+
+By David Ruff
+
+## Enemy Behavior
+
+In order to bring the overlord, that we added last week, to life, we created a script that controls his behavior.
+Since this enemy is our first boss in the dungeon, he should show a bit more complex behavior than our previous opponents.
+The overlord only spawns in the recently added boss room by Sven Gerber.
+At the beginning, he disguises himself as a statue in the room.
+This statue is located relatively centrally and on the opposite side of the entrance, which is locked by the boss door.
+
+When the player enters the room and comes within a certain distance of the boss, he comes to life.
+To achieve this, materials were created that can blend between two appearances/textures.
+A corresponding shader graph was created for this purpose.
+
+The boss fight is divided into four phases.
+At each phase change, the overlord roars and summons/spawns skeletons to help him fight the player.
+During this time, the boss is invulnerable and takes no damage.
+
+To make the fight more challenging, the overlord has three times as much health as normal skeletons and has a slightly increased movement speed.
+The overlord chooses his attacks based on his distance to the player and the current phase.
+The boss can choose between three melee attacks (grab, punch, and swiping) and two ranged attacks (jump and fire breath).
+
+To implement the jump attack, a rigidbody is used in addition to the animation to apply short directional jump forces to the boss.
+The fire breath was implemented using a particle system and a simple box collider that grows with the size of the particle system.
+
+Furthermore, a bug in the opponent base class has been fixed, which allowed the attack coroutine to be executed multiple times.
+Another bug has also been fixed, which caused slimes to continue attacking players who had already died.
+
+By Rene Tischler

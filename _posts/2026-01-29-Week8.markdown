@@ -32,22 +32,21 @@ This allows us to better coordinate with the animations without the need for all
 
 By Rene Tischler
 
-
 ## Level Generation (Items)
 
-Improved loot placement in the level. 
+Improved loot placement in the level.
 Until now, we only had chests with some random items as loot.
 
-Now, I implemented attaching loot to any object such that the loot gets dropped 
-on destruction. With that, we can attach loot to enemies and have them drop it 
-when dying. 
+Now, I implemented attaching loot to any object such that the loot gets dropped
+on destruction. With that, we can attach loot to enemies and have them drop it
+when dying.
 
 I improved the level generation such that first, a budget of loot is sampled.
 Here, the level parameters are used (available gold, available xp, ammunition per enemy).
 Then, when placing chests and enemies in the scene, random loot from that budget
 can be added to them.
 Further, now the dungeon creator also places one large chest in the level, which
-has more loot. The loot for this large chest is sampled from an exponential 
+has more loot. The loot for this large chest is sampled from an exponential
 distribution (independent of loot budget), to make it more unpredictable.
 
 ## Level Generation
@@ -66,5 +65,5 @@ I use poisson distributions because they make it easy to balance the expected
 amount and expected number of enemy groups per level, while still achieving
 a lot of perceived randomness and unpredictability.
 
-Axel Schneewind
+By Axel Schneewind
 
