@@ -27,7 +27,7 @@ So far, I added piles of rocks and pieces of wood as decorations. I created thes
 by modeling a handful of different rocks and pieces of wood and placed them onto 
 a circle using the scatter-on-surface-modifier in blender.
 
-<img width="300" alt="Rubble" src="{{site.imgpath}}/rubble.gif">
+<img width="300" alt="Rubble" src="{{site.imgpath}}/rubble.png">
 
 Similarly, I also created a pile of rubble where I used a simple voronoi texture 
 on the base model and scattered rocks on its surface.
