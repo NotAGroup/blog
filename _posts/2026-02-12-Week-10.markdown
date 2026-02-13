@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "Week 10"
+categories: jekyll update
+---
+
+## UI/Input (Feedback from Demo Session)
+
+From the demo session we got valuable feedback concerning input and ui which I implemented this week. 
+It includes 
+
+- Moving items in the inventory (now, we use two colors to highlight slots when moving items: one for the currently selected slot and one for the slot that the item is taken from)
+- Gamepad input for main menu, pause and death screen
+- Missing mapping for pause on gamepad
+- look sensitivity on gamepad
+
+and other small fixes.
+
+
+## Dungeon Generation: Decorations
+
+Another point frequently mentioned in feedback was the fact that the levels look very empty.
+For this reason, I extended the dungeon generation algorithm such that it can also
+place random decorative assets in the level and added some assets.
+
+So far, I added piles of rocks and pieces of wood as decorations. I created these
+by modeling a handful of different rocks and pieces of wood and placed them onto 
+a circle using the scatter-on-surface-modifier in blender.
+
+<img width="300" alt="Rubble" src="{{site.imgpath}}/rubble.gif">
+
+Similarly, I also created a pile of rubble where I used a simple voronoi texture 
+on the base model and scattered rocks on its surface.
+
+Finally, I created a very basic puddle of water, which consists of a deformed circle
+and a transparent and reflective material. I also simulate water drops falling from 
+the ceiling using a particle system (with drops creating 'splashes' in the water
+using a second particle system).
+
