@@ -103,3 +103,48 @@ Furthermore, a bug in the opponent base class has been fixed, which allowed the 
 Another bug has also been fixed, which caused slimes to continue attacking players who had already died.
 
 By Rene Tischler
+
+## The Boss Room
+
+This week I implemented the Boss Room. The Idea was to create a Boss Room Prefab, which can be appended to one room of the dungeon.
+But this approach made it very hard to blend the entrance of the Boss Room smoothly into any wall. So after a few thoughts, this idea
+was scrapped and instead the boss room generation was implemented in the dungeon generation process.
+
+In the dungeon definitions the variable **hasBoss** is used to check if the floor should have a Boss Room. The value of this variable is calculated depening on the progression of the player.
+
+When a floor should have a boss room, a new room is added to the existing dungeon. The room has a fixed size and depending on the start room of the player, the boss room is placed furthest from the start room. Calculating the angle between the start room and the furthest room gives a direction where to place the boss room. With that the room is appended to a corner room of the dungeon.
+
+These rooms are then connected via a corridor using the corridor script which is used to connect two rooms all through the dungeon generation. No furhter adjustments had to be done since the wall and pillar creation for the boss room and corridor follow the same conventions as any other room.
+
+Since the Boss Room is quite big its lighting isn't optimal especially in the center. Four additional pillars are added inside the room and torches are placed around it, which not only fixes the lighting probleme but also gives the room a more special feeling.
+
+But what really gives it away that this room is a boss room is the beautiful and menacingly looking Boss Door, made by David, in the middle of the boss corridor which stops the player from entering the boss room until all enemies on the floor have been defeated. Finally the boss door had also a lighting probleme which I fixed by adding toches to the corridor pillars in front of the door.
+
+Sadly a bug appeared which lets the boss room spawn in the dungeon not at a corner. This bug appears very rarely but it's still an issue to keep an eye on. Probably the solution has something to do with the rotataion in Unity since the rotation on the Y-axis for -90° should be the same as for 270° but in the second case another flip also happening.
+
+By Sven Gerber
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
