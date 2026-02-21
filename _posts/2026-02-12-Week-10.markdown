@@ -6,8 +6,8 @@ categories: jekyll update
 
 ## UI/Input (Feedback from Demo Session)
 
-From the demo session we got valuable feedback concerning input and ui which I implemented this week. 
-It includes 
+From the demo session we got valuable feedback concerning input and ui which I implemented this week.
+It includes
 
 - Moving items in the inventory (now, we use two colors to highlight slots when moving items: one for the currently selected slot and one for the slot that the item is taken from)
 - Gamepad input for main menu, pause and death screen
@@ -16,7 +16,6 @@ It includes
 
 and other small fixes.
 
-
 ## Dungeon Generation: Decorations
 
 Another point frequently mentioned in feedback was the fact that the levels look very empty.
@@ -24,16 +23,34 @@ For this reason, I extended the dungeon generation algorithm such that it can al
 place random decorative assets in the level and added some assets.
 
 So far, I added piles of rocks and pieces of wood as decorations. I created these
-by modeling a handful of different rocks and pieces of wood and placed them onto 
+by modeling a handful of different rocks and pieces of wood and placed them onto
 a circle using the scatter-on-surface-modifier in blender.
 
 <img width="300" alt="Rubble" src="{{site.imgpath}}/rubble.png">
 
-Similarly, I also created a pile of rubble where I used a simple voronoi texture 
+Similarly, I also created a pile of rubble where I used a simple voronoi texture
 on the base model and scattered rocks on its surface.
 
 Finally, I created a very basic puddle of water, which consists of a deformed circle
-and a transparent and reflective material. I also simulate water drops falling from 
+and a transparent and reflective material. I also simulate water drops falling from
 the ceiling using a particle system (with drops creating 'splashes' in the water
 using a second particle system).
 
+By Axel Schneewind
+
+## Enemy Behavior
+
+Since we still had problems with the animations and rigidbody, our boss monster's jump attack was disabled during the demo session.
+One reason for this was that the animation did not always match the physical jump duration.
+This problem was solved by calculating the estimated jump time and adjusting the animation speed accordingly using a multiplier.
+
+Furthermore, the phase and distance to the player are no longer the only factors that determine whether the jump attack is selected; the path to the player must also be clear. This effectively prevents the overlord from jumping against the pillars in the room and getting stuck on them.
+
+Also, a separate cooldown for the jump attack has been added to prevent the overlord from permanently jumping around the room like a rabbit when the player keeps a relatively big gap from the boss.
+
+During the demo session, we also noticed that it was relatively easy to defeat the overlord by sneaking up behind the boss before he awakens.
+Since you never entered the overlord's field of view, he never turned toward the player and could be easily struck down with the sword.
+This was not possible with the bow, as all opponent classes turn in the direction of the shot when hit by a projectile.
+To prevent this in the future, an alert area has also been added to the overlord, where he can detect the player even if they are not directly in his field of view.
+
+By Rene Tischler
