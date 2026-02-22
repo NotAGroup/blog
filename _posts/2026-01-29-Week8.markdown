@@ -35,7 +35,7 @@ By Rene Tischler
 ## Slime Behavior
 
 Create Slime behavior.
-All slime animation is shader ogram calculated instead of skeletton animation.
+All slime animation is shader program calculated in real time instead of skeletton animation.
 It should seem very bouncy, juicy and jelly. 
 Once it found player, it will chase player slowly until death.
 Slime will jump to player to attack with a low damage. When It attack it will turn into red.
