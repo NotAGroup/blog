@@ -53,6 +53,7 @@ By Rene Tischler
 ## Animation
 
 Created animation of Skeleton.
+
 Including Locomotion (Idle and move to 4 directions) for sword skeleton and archer skeleton.
 Attacking animation and Hitreact animation.
 

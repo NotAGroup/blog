@@ -55,8 +55,11 @@ By Rene Tischler
 ## Animation and Models
 
 Finished Animation of Warriors.
+
 Including multiple Attack, Block, Jump, Shooting Arrow.
+
 Please check in project.
+
 Start Boss Model.
 
 By Guanpu Tian
