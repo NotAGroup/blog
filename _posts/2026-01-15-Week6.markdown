@@ -113,8 +113,8 @@ And I am very bad at sculpting face.
 
 Also made the first version with slime.
 
-<img width="300" alt="Slime_divide" src="{{site.imgpath}}/Slime_divide.png">
-<img width="300" alt="Slime_particle" src="{{site.imgpath}}/Slime_particle.png">
+<img width="300" alt="Slime_divide" src="{{site.imgpath}}/Slime_divide.gif">
+<img width="300" alt="Slime_particle" src="{{site.imgpath}}/Slime_particle.gif">
 
 Try to use FEM to simulate slime animation instead of skeletton animation.
 
