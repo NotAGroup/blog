@@ -44,7 +44,7 @@ By Rene Tischler
 
 For the Enemy assets. 2 variations of Skeletton models, with sword and with bow are finished.
 
-<img width="300" height="400" alt="Skeletton" src="{{site.imgpath}}/Skeletton.png">
+<img width="300" alt="Skeletton" src="{{site.imgpath}}/Skeletton.png">
 
 And bow and quiver Model.
 
