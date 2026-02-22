@@ -50,6 +50,13 @@ To enable the player to shoot arrows as an archer in the future, a suitable mode
 
 By Rene Tischler
 
+Created animation of Skeleton.
+Including Locomotion (Idle and move to 4 directions) for sword skeleton and archer skeleton.
+Attacking animation and Hitreact animation.
+
+By Guanpu Tian
+
+
 ## Combat System & Enemy Behavior:
 
 Now, when the players health reaches zero, a death screen appears, which locks the controls for the player and shows a button that lets the player restart the game. The restart button also calls the save function to save the progress that the player has made during his previous run. Enemies now use their proper model and animations, which for now includes an idle animation, walking forward, attacking with a sword, getting hit and dying. This improves the readability and feedback the player gets during combat about what the enemies are doing and what effect his actions have. The ranged attack now shoots proper arrows instead of spheres. If the player hits a wall or the floor, the arrows remain there and can be picked up to replenish ammo. Ammo is stored in the players inventory and gets depleted with each shot.

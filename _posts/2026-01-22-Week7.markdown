@@ -74,3 +74,12 @@ There still seems to be a glitch in both enemy types that causes the skeleton to
 This bug needs to be fixed as soon as possible.
 
 By Rene Tischler
+
+## Assets
+
+Remake Boss model and animation.
+Including locomotion, 3 normal attack, grab, roar, fire breath, different hit react, jump attack, dying.
+
+Remake slime in a method with better performance.
+
+By Guanpu Tian

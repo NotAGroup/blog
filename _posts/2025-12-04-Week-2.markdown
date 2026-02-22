@@ -42,6 +42,14 @@ Furthermore, a torch model with a normal, metallic, and diffuse texture was crea
 
 By Rene Tischler
 
+For the Enemy assets. 2 variations of Skeletton models, with sword and with bow are finished.
+
+And bow and quiver Model.
+
+Animations in processing.
+
+By Guanpu Tian
+
 ## Wall Creation
 
 With the new Wall Asset from Rene, I implemented the wall creation of the dungeon. It looked to steched out using only one Asset for each Wall

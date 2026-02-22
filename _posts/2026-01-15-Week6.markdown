@@ -98,3 +98,18 @@ The Door is functional and has animation, next steps are some improvments of the
 ![](images/boss-door-unity-1.png){: height="250ex"}
 
 By David Ruff
+
+## Assets
+
+Tried sculpting to create complex boss model.
+But after model simplification, all details are lost.
+Model rig are also terrible.
+And I am very bad at sculpting face.
+
+Also made the first version with slime.
+Try to use FEM to simulate slime animation instead of skeletton animation.
+But cost too much performance.
+
+Have to remake both things.
+
+By Guanpu Tian

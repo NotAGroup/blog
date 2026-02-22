@@ -124,8 +124,11 @@ Sadly a bug appeared which lets the boss room spawn in the dungeon not at a corn
 
 By Sven Gerber
  
+## Bug Fixes
+
+Fix some player input and enemy logic and animation bugs.
  
- 
+By Guanpu Tian
  
  
  
