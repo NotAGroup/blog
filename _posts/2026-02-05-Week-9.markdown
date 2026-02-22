@@ -126,7 +126,7 @@ By Sven Gerber
  
 ## Bug Fixes
 
-Fix some player input and enemy logic and animation bugs.
+Fix some player input, enemy logic and animation bugs.
  
 By Guanpu Tian
  

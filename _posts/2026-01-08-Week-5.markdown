@@ -52,9 +52,11 @@ Textures and materials were also created for the new warrior model designed by G
 
 By Rene Tischler
 
-Finished Animation of Warriors.
-Including Attack, Block, Jump, Shooting Arrow.
+## Animation and Models
 
+Finished Animation of Warriors.
+Including multiple Attack, Block, Jump, Shooting Arrow.
+Please check in project.
 Start Boss Model.
 
 By Guanpu Tian

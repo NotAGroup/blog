@@ -26,6 +26,8 @@ To make the existing skeleton soldier more visually appealing, suitable color an
 By Rene Tischler
 
 Create model for player, the Warrior.
+<img width="300"  alt="Warrior" src="{{site.imgpath}}/Warrior.png">
+
 It is a warrior model without head, beacuse the game is a First Person Game.
 Motivation comes from the Link of Legend of Zelda last century.
 Also Created locomotion animation of Warrior.

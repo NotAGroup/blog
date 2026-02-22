@@ -78,7 +78,10 @@ By Rene Tischler
 ## Assets
 
 Remake Boss model and animation.
+
+<img width="300" alt="Boss" src="{{site.imgpath}}/Boss.png">
 Including locomotion, 3 normal attack, grab, roar, fire breath, different hit react, jump attack, dying.
+<img width="300" alt="Slime" src="{{site.imgpath}}/Slime_final.gif">
 
 Remake slime in a method with better performance.
 
