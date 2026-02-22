@@ -104,14 +104,18 @@ By David Ruff
 Tried sculpting to create complex boss model.
 
 <img width="300" alt="Boss_v1" src="{{site.imgpath}}/Boss_v1.png">
+
 But after model simplification, all details are lost.
 Model rig are also terrible.
 And I am very bad at sculpting face.
 
 Also made the first version with slime.
+
 <img width="300" alt="Slime_divide" src="{{site.imgpath}}/Slime_divide.png">
 <img width="300" alt="Slime_particle" src="{{site.imgpath}}/Slime_particle.png">
+
 Try to use FEM to simulate slime animation instead of skeletton animation.
+It works bouncy and can be divided.
 But cost too much performance.
 
 Have to remake both things.

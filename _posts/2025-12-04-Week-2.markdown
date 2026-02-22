@@ -47,8 +47,9 @@ For the Enemy assets. 2 variations of Skeletton models, with sword and with bow 
 <img width="300" height="400" alt="Skeletton" src="{{site.imgpath}}/Skeletton.png">
 
 And bow and quiver Model.
-<img width="300" height="400" alt="Bow" src="{{site.imgpath}}/Bow.png">
-<img width="300" height="400" alt="Quiver" src="{{site.imgpath}}/Quiver.png">
+
+<img width="300" alt="Bow" src="{{site.imgpath}}/Bow.png">
+<img width="300" alt="Quiver" src="{{site.imgpath}}/Quiver.png">
 
 Animations in processing.
 
