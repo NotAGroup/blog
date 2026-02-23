@@ -99,7 +99,7 @@ Also i want to import it into unity so we can inegrated it into the dungeon crea
 
 With the hope that i can later change the model and textures.
 
-![](images/boss-door-unity-1.png){: height="250ex"}
+![]({{site.imgpath}}/boss-door-unity-1.png){: height="250ex"}
 
 By David Ruff
 
