@@ -61,8 +61,15 @@ Other small contributions: Improved gamepad mappings for UIs and stick-based cam
 By Axel Schneewind
 
 ## Game Saving
-The game can now save to Disk. This allows for things like collected coins and player levels, to not only be kept between runs, but also between game executions.
+The game can now save to Disk.
+This allows for things like collected coins and player levels, to not only be kept between runs, but also between game executions.
 
+For that i implemented a generall serialisation/deserialisation functionality. because i wanted it to use different criteria the the unity build in system.
+I also designed it so it is very easy to use if you want to save something. You just have to subsribe your object and mark all fields with attributes.
+
+Something else that was very important to me was the storage path. I can get often very annoyed by games saving into randome folders like `documents`.
+So i set it to store in `~/.local/share` on linux and `%USERPROFILE%\samve games`... i ignored mac os, i have no idea where to save there and we dont have a test system.
+ 
 By David Ruff
 
 ## Correcting the Wall Creation

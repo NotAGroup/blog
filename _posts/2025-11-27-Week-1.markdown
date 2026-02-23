@@ -62,6 +62,9 @@ By Moritz Mahling
 
 ## Tooling:
 
-This blog has been set up and configured.
+This blog has been set up and configured. 
+I decied to keep it simple and host via github pages, but initial trials revelead that github pages have an import drawbag by not supporting git-lfs. 
+Which is a problem because we will probably need media files.
+So i changed it a litlte bit and build the page via github actions. 
 
 By David Ruff

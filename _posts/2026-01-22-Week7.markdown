@@ -59,6 +59,7 @@ Moving was a bit of hassle because i couldn't just pull the newest version.
 
 Sadly some changes of this week where lost.
 
+I hope that is the last time i have to emergency administrate something. It took atleast a complete day and i dont mean 8h and fellt like it took a whole month.
 By David Ruff
 
 ## Enemy Behavior

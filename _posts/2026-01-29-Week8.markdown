@@ -16,7 +16,20 @@ By Rene Tischler
 
 ## Assets 2
 
-Also the Boss room door is now exported and integrated into unity
+Also the Boss room door is now exported and integrated into unity.
+Which was astonashingly difficult. Because i need one the one side my laptop got overwhelmed by the model.
+But also how do export and import the materials from unity to blender. Because the material systems are not fully compatible.
+
+After a lot of trial and error i got a worklfow where is used the basic materials of unity and baked textures in blender. Atleast a color map and a normal map and some even smothness for metalic effects.
+That of curse for the wood of the door the skull, the rim of the door the rivets and the wall.
+The last one even got a new model, where the bricks physicall extend from the wall.
+
+The animation was easier to export, but i had some trouble getting animations to work in unity, because i had never used either animation system. So i tried both.
+At the end i wen for the new animation system, even if i only have animation that dosnt need blending.
+
+I am quite happy, because the door does not simply open. But the skull first looks angry, before the wings of the door start to swing open with increasing force. Before the smah into the wall and get thrown back a little before fully opening.
+
+Then i only need to subscribe the end of the animation to remove alpha wall. I thought for a sceond if i should implement a realisting collision for the door. Which would allow the the player to try to squees through the opening door wings...but this is way is far simpler.
 
 By David Ruff
 
