@@ -129,6 +129,12 @@ By Sven Gerber
 Fix some player input, enemy logic and animation bugs.
  
 By Guanpu Tian
+
+## Animation and Sounds
+
+Further improvements and fixes to various animations that were already present in the game. Sounds have been added where applicable (sword hit sounds, bow draw sound, bow release sound, arrow hit sound). Implemented the animations for the boss and ensured that movement animations and attack animations or animations for getting hit are able to play simultaneously without interfering with each other (movement animations only apply to the legs, except for the jump animation).
+
+By Moritz Mahling
  
  
  

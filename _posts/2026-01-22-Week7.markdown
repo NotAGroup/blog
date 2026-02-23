@@ -89,3 +89,9 @@ Including locomotion, 3 normal attack, grab, roar, fire breath, different hit re
 Remake slime in a method with better performance.
 
 By Guanpu Tian
+
+## Animation
+
+This week, the focus was on fixing some remaining issues related to the animations of the player model, such as the sword disappearing at certain viewing angles and the movement animations for the player model reacting slowly to changing input in certain conditions. Additionally, a first bow shooting animation has been implemented.
+
+By Moritz Mahling

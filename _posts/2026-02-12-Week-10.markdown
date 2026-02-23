@@ -55,7 +55,7 @@ To prevent this in the future, an alert area has also been added to the overlord
 
 By Rene Tischler
 
-## Some result fro mthe playtest.
+## Some result from the playtest.
 The average player did not look at the boss door, but try to run through as soon as possible even if that means constantly running agains the alpha wall. But well that hid the fact that the side of the door flickers.
 Propably cause by some z-fighting between the skull and the rim. The correct solution would be to merge models. But then i would have to reaplly all the materials. Rebake them. Re export them and propalby repaint the weights for the animation...yeah.
 
@@ -73,3 +73,9 @@ fixed some still broken iamges in the blog fro mthe migration and finally added 
 <img width="60px" src="{{site.imgpath}}/favicon.png">
 
 By David Ruff
+
+## Animation
+
+Code cleanup to remove some console errors that could appear, even though they didn't cause player-facing issues. Additionally, during the playtest some balancing work was being done on health and damage values of the enemies as well as the attack speeds of enemies and the player to improve the player experience.
+
+By Moritz Mahling

@@ -65,7 +65,7 @@ Use IK to align warrior animation and bow animation to make Warrior's finger on 
 Use a dummy arrow to indicate player you have arrow on bow. 
 But because the dumy arrow points not into monitor center, so it is not the arrow which be shot. 
 The arrow shot will generate when player release the bow, and the dummy arrow will transfer into quiver.
-When player has no more arrow, there is no dummu arrow when drawing the bow, which can notify player, that your quiver is empty now.
+When player has no more arrow, there is no dummy arrow when drawing the bow, which can notify player, that your quiver is empty now.
 
 By Guanpu Tian
 
@@ -103,4 +103,10 @@ amount and expected number of enemy groups per level, while still achieving
 a lot of perceived randomness and unpredictability.
 
 By Axel Schneewind
+
+## Animations
+
+Further bug fixes for all animations and refinement of the bow shooting animations to allow for charging and holding the bow before releasing to shoot.
+
+By Moritz Mahling
 
