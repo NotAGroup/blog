@@ -54,3 +54,17 @@ This was not possible with the bow, as all opponent classes turn in the directio
 To prevent this in the future, an alert area has also been added to the overlord, where he can detect the player even if they are not directly in his field of view.
 
 By Rene Tischler
+
+## Some result fro mthe playtest.
+The average player did not look at the boss door, but try to run through as soon as possible even if that means constantly running agains the alpha wall. But well that hid the fact that the side of the door flickers.
+Propably cause by some z-fighting between the skull and the rim. The correct solution would be to merge models. But then i would have to reaplly all the materials. Rebake them. Re export them and propalby repaint the weights for the animation...yeah.
+
+## Future
+I started thinking and discussing a bit the future of the project. We will propably not for a game companny. But simply squashing the repo into some sort of non public archive. Would be a bit sad and at the end of the day we did everything from scratch, except the engine, so there should not be a copyright problem.
+So i will defently remigrated the repo and blog back to github. Becuase the university hosting could vanish and i dont want to provide my server for the blog media into the endless future.
+Addiationally i would like the repository to become opensource, with an GPL-V2, MIT or some other licence.
+But that has to be decied by all team members consensually.
+
+...and are both topics for the end and after the end of the project.
+
+By David Ruff
