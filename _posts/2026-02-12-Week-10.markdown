@@ -69,6 +69,7 @@ But that has to be decied by all team members consensually.
 
 ## Last fixes.
 fixed some still broken iamges in the blog fro mthe migration and finally added a favicon.
-<img width="128" src="{{site.imgpath}}/favicon.png">
+
+<img width="60px" src="{{site.imgpath}}/favicon.png">
 
 By David Ruff
