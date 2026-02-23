@@ -67,4 +67,8 @@ But that has to be decied by all team members consensually.
 
 ...and are both topics for the end and after the end of the project.
 
+## Last fixes.
+fixed some still broken iamges in the blog fro mthe migration and finally added a favicon.
+<img width="128" src="{{site.imgpath}}/favicon.png">
+
 By David Ruff
